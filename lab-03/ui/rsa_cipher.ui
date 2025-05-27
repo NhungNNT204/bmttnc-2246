@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1379</width>
+    <height>808</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_encrypt">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>350</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Encrypt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Plaintext:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_decrypt">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>350</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Decrypt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>RSA CIPHER</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="txt_plain_text">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>381</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="txt_cipher_text">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>230</y>
+      <width>381</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CipherText</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_gen_keys">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>50</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate Keys</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_sign">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>350</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sign</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_verify">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>350</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Verify</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="txt_sign">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>230</y>
+      <width>381</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>260</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Signature</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>130</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Information:</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="txt_info">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>100</y>
+      <width>381</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>450</y>
+      <width>481</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>Bước 1: Tạo khóa RSA: Nhấn vào Generate Keys.
+Bước 2: Mã hóa thông điệp
++ Nhập thông điệp cần mã hóa vào Ô Plain Text
++ Nhấn vào Encrypt.
+Bước 3: Giải mã thông điệp
++ Ô Cipher Text: Giữ nguyên nội dung đã được mã hóa từ bước trước.
++ Nhấn vào Decrypt.
+Bước 4: Ký số
++ Nhập thông điệp cần ký số vào Ô Plain Text. (ví dụ: day la chu ky cua toi).
++ Nhấn vào Sign.
+Bước 5: Xác thực chữ ký số
++ Ô Signature: Giữ nguyên chữ ký số đã tạo ở bước trước.
++ Ô Plain Text: Giữ nguyên nội dung thông điệp đã ký (không thay đổi).
++ Nhấn vào Verify.
+-&gt; Thông báo trạng thái xác minh (ví dụ: Verified Successfully).</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1379</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
